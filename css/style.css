@@ -36,6 +36,9 @@ a {
 	text-decoration: none;
 }
 
+
+/* Content
+--------------------------------------------- */
 .channel {
 	border: 1px solid #cacaca;
 	margin: 1.428em 0;
@@ -131,6 +134,14 @@ dd {
 	margin-bottom: 0;
 }
 
+.followers .title {
+	font-size: 1.142em;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #777;
+	text-transform: uppercase;
+}
+
 @media (max-width: 1199px) and (min-width: 992px) {
 	.logo {
 		width: 15%;
@@ -156,10 +167,6 @@ dd {
 }
 
 @media (max-width: 767px) {
-	body {
-		font-size: 14px;
-	}
-	
 	.channel {
 		padding: 1.428em 0.714em 1.428em;
 	}
@@ -213,10 +220,10 @@ dd {
 	}
 }
 
-.followers .title {
-	font-size: 1.142em;
-	font-weight: 400;
-	line-height: 1.2;
-	color: #777;
-	text-transform: uppercase;
+
+/* Footer
+--------------------------------------------- */
+.site-footer {
+	padding: 3.125em 0;
+	text-align: center;
 }
