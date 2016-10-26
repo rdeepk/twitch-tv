@@ -7,8 +7,15 @@ var defaultLogo = "http://www.windowscentral.com/sites/wpcentral.com/files/style
  * @summary Fetch the random channels from Twitch API and initiates the display.
  */
 function displayRandomChannels() {
-	url = "https://api.twitch.tv/kraken/streams?limit=10&offset=%RAND";
+	$.ajaxSetup({
+ 	 headers : {   
+    		'Client-ID' : '7lg2s8t3cmytyzesq9sn27rfa9o3h8q'
+  		}
+	});
+	//url = "https://api.twitch.tv/kraken/beta/streams/random"
+	url = "https://api.twitch.tv/kraken/streams";
 	$.getJSON( url, function( response ) {
+	console.log(response);
 		response.streams.forEach( function( item ) {
 			setData( item );
 			displayData();
